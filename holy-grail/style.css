@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#header{
+    background-color: orange;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    display: flex;
+    flex: 1;
+}
+
+.sidebar{
+    /* in big screens we fix the sidebar width, and in mobile screens we fix the height */
+    width: 20%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#left-sidebar{
+    background-color: greenyellow; 
+}
+
+#center-container{
+    background-color: palevioletred;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#right-sidebar{
+    background-color: yellow;
+}
+
+#footer{
+    background-color: orangered;
+    width: 100%;
+    height: 3rem;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:480px) {
+    #container{
+        flex-direction: column;
+    }
+
+    .sidebar{
+        width: 100%;
+        height: 15%;
+        /* We fix height here*/
+    }
+}

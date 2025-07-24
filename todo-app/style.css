@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 1rem;
+}
+
+.todo-form{
+    display: flex;    
+    width: 100%;
+    gap: 10px;
+}
+
+.todo-input, .update-input{
+    padding: 0.5rem;
+    flex: 1;
+    border-radius: 0.2rem;
+}
+
+.todo-button{
+     padding: 0.5rem;
+     border-radius: 0.2rem;
+     font-weight: bold;
+     background-color: bisque;
+     cursor: pointer;
+}
+
+.new-todo-container{
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* #todos{
+    margin-top: 1rem;
+} */
+
+.new-todo{
+    color: green;
+    flex: 1;
+}
+
+.update-button, .delete-button{
+    margin-right: 0.2rem;
+}
+
+.update-button,.delete-button,.save-button, .mark-as-complete-button{
+    padding: 0.3rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+
+.update-button{
+    background-color: blue;
+    color: white;
+}
+.delete-button{
+    background-color: #F44336;
+    color: white;
+}
+
+.mark-as-complete-button{
+    background-color: #4CAF50;
+    color: white;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+    .todo-form{
+        flex-direction: column;
+    }
+    .todo-button{
+        margin: 0 auto;
+    }
+}
