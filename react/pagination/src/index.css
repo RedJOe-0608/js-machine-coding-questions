@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  padding: 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.products-container{
+  margin: 1rem;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pages{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.pages-btn{
+  width: 2rem;
+  padding: 0.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.pages-btn.active{
+  background-color: green;
+  color: white;
+}
+
+.hidden{
+  display: none;
+}
+
+.visible{
+  display: inline-block;
+}
